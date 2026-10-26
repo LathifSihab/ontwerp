@@ -1,10 +1,26 @@
 // Mobiel menu
 (function(){
   var btn = document.querySelector('.menu-btn'), nav = document.querySelector('.main-nav');
-  if(btn && nav) btn.addEventListener('click', function(){
-    var open = nav.classList.toggle('open');
+  function setOpen(open){
+    nav.classList.toggle('open', open);
+    document.body.classList.toggle('menu-open', open);
     btn.setAttribute('aria-expanded', open ? 'true' : 'false');
-  });
+    btn.setAttribute('aria-label', open ? 'Menu sluiten' : 'Menu');
+  }
+  if(btn && nav){
+    btn.addEventListener('click', function(){ setOpen(!nav.classList.contains('open')) });
+    // Sluiten met Escape, met een klik buiten het menu, of na het kiezen van een link
+    document.addEventListener('keydown', function(e){
+      if(e.key === 'Escape' && nav.classList.contains('open')){ setOpen(false); btn.focus() }
+    });
+    document.addEventListener('click', function(e){
+      if(nav.classList.contains('open') && !nav.contains(e.target) && !btn.contains(e.target)) setOpen(false);
+    });
+    nav.addEventListener('click', function(e){ if(e.target.closest('a')) setOpen(false) });
+    // Terug naar het brede menu: open-toestand opruimen
+    var wide = window.matchMedia('(min-width:1181px)');
+    (wide.addEventListener ? wide.addEventListener.bind(wide, 'change') : wide.addListener.bind(wide))(function(m){ if(m.matches) setOpen(false) });
+  }
   var yr = document.getElementById('yr'); if(yr) yr.textContent = new Date().getFullYear();
 })();
 
