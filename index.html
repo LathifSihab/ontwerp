@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>[Bedrijfsnaam] — Team-, leiderschaps- en organisatieontwikkeling</title>
+<meta name="description" content="Begeleiding bij team-, leiderschaps- en organisatieontwikkeling.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Source+Sans+3:wght@400;600&display=swap">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<meta name="theme-color" content="#24475A">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <!-- Logo: beeldmerk (assets/img/logo-mark.svg) + bedrijfsnaam als tekst -->
+    <a class="logo" href="index.html"><img src="assets/img/logo-mark.svg" alt="" width="40" height="40"><span>[Bedrijfsnaam]</span></a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="main-nav">Menu</button>
+    <nav class="main-nav" id="main-nav" aria-label="Hoofdmenu">
+      <ul>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="teamontwikkeling.html">Teamontwikkeling</a></li>
+        <li><a href="leiderschapsontwikkeling.html">Leiderschapsontwikkeling</a></li>
+        <li><a href="organisatieontwikkeling.html">Organisatieontwikkeling</a></li>
+        <li><a href="academy.html">Academy</a></li>
+        <li><a href="over-mij.html">Over mij</a></li>
+        <li><a href="contact.html" class="cta">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- FOTO met tekstvak -->
+  <div class="photo hero">
+    <!-- Decoratieve lijnen rechts in de foto -->
+    <svg class="hero-deco" viewBox="0 0 400 400" aria-hidden="true">
+      <circle cx="200" cy="200" r="150" pathLength="1"/><circle cx="200" cy="200" r="110" pathLength="1"/>
+      <path d="M40 330C150 320 240 250 300 110" pathLength="1"/><circle class="dot" cx="300" cy="110" r="14"/>
+    </svg>
+    <img src="assets/img/home-hero.jpg" alt="[Beschrijving van de foto]">
+    <div class="wrap">
+      <div class="panel rise">
+        <h1>Ruimte maken voor teams die verder willen</h1>
+        <p>Begeleiding bij team-, leiderschaps- en organisatieontwikkeling. Praktisch, persoonlijk en gericht op wat er in jouw organisatie echt speelt.</p>
+        <div class="actions">
+          <a class="btn btn-accent" href="contact.html">Plan een kennismaking</a>
+          <a class="btn btn-ghost" href="#aanbod">Bekijk het aanbod</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TEKSTVELD 1 -->
+  <section>
+    <div class="wrap">
+      <div class="textfield center" data-reveal>
+        <!-- Illustratie: beeldmerk als lijntekening, tekent zich bij het scrollen -->
+        <svg class="motif" viewBox="0 0 240 90" aria-hidden="true">
+          <path d="M10 80C70 78 130 60 170 40S220 14 230 10" pathLength="1"/>
+          <circle cx="22" cy="79.5" r="6"/><circle cx="92" cy="72" r="8"/><circle cx="160" cy="45" r="10"/><circle class="accent" cx="226" cy="12" r="12"/>
+        </svg>
+        <p class="lead">[Tekstveld 1] Een korte introductie: wie je bent, voor wie je werkt en wat organisaties aan jou hebben. Bijvoorbeeld: “Ik geloof dat samenwerking beter wordt als mensen elkaar echt begrijpen. Ik help teams en leidinggevenden om dat gesprek te voeren en er concrete stappen uit te halen.”</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- AANBOD: 4 linkknoppen naar de diensten -->
+  <section class="aanbod" id="aanbod">
+    <div class="wrap">
+      <span class="eyebrow">Aanbod</span>
+      <h2 data-reveal>Waar ik je mee help</h2>
+      <div class="grid4">
+      <a class="tile" href="teamontwikkeling.html" data-reveal style="--d:0">
+        <div class="photo"><img src="assets/img/teamontwikkeling-tegel.jpg" alt="" loading="lazy"></div>
+        <div class="body"><span class="tile-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9.5" r="2.5"/><path d="M3 19c0-3.3 2.7-6 6-6s6 2.7 6 6"/><path d="M15.2 13.5c.6-.2 1.2-.2 1.8-.2 2.8 0 4.5 2 4.5 5.2"/></svg></span><h3>Teamontwikkeling</h3><p>Voor teams, MT’s en afdelingen die beter willen samenwerken.</p><span class="more">Meer info</span></div>
+      </a>
+      <a class="tile" href="leiderschapsontwikkeling.html" data-reveal style="--d:1">
+        <div class="photo"><img src="assets/img/leiderschapsontwikkeling-tegel.jpg" alt="" loading="lazy"></div>
+        <div class="body"><span class="tile-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2.5 20 9 9.5l3.5 5.5 2-3L21.5 20z"/><path d="M9 9.5V3.5l4.5 1.6L9 6.7"/></svg></span><h3>Leiderschaps&shy;ontwikkeling</h3><p>Voor leidinggevenden en managers die willen groeien in hun rol.</p><span class="more">Meer info</span></div>
+      </a>
+      <a class="tile" href="organisatieontwikkeling.html" data-reveal style="--d:2">
+        <div class="photo"><img src="assets/img/organisatieontwikkeling-tegel.jpg" alt="" loading="lazy"></div>
+        <div class="body"><span class="tile-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="3" width="6" height="5" rx="1.2"/><rect x="3" y="16" width="6" height="5" rx="1.2"/><rect x="15" y="16" width="6" height="5" rx="1.2"/><path d="M12 8v4M6 16v-2.5h12V16"/></svg></span><h3>Organisatie&shy;ontwikkeling</h3><p>Voor organisaties in verandering: structuur, cultuur en koers.</p><span class="more">Meer info</span></div>
+      </a>
+      <a class="tile" href="academy.html" data-reveal style="--d:3">
+        <div class="photo"><img src="assets/img/academy-tegel.jpg" alt="" loading="lazy"></div>
+        <div class="body"><span class="tile-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 9.5 12 4.5l10 5-10 5z"/><path d="M6 11.5v4.5c0 1.5 2.7 3 6 3s6-1.5 6-3v-4.5M22 9.5v5"/></svg></span><h3>Academy</h3><p>Trainingen en masterclasses om zelf mee aan de slag te gaan.</p><span class="more">Meer info</span></div>
+      </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEKSTVELD 2 -->
+  <section class="band">
+    <div class="wrap" data-reveal>
+      <p>[Tekstveld 2] Een afsluitende boodschap, bijvoorbeeld: “Samen zetten we ideeën om in actie.”</p>
+      <div class="actions"><a class="btn btn-accent" href="contact.html">Neem contact op</a></div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="fcols">
+      <div>
+        <h3>Navigatie</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="teamontwikkeling.html">Teamontwikkeling</a></li>
+          <li><a href="leiderschapsontwikkeling.html">Leiderschapsontwikkeling</a></li>
+          <li><a href="organisatieontwikkeling.html">Organisatieontwikkeling</a></li>
+          <li><a href="academy.html">Academy</a></li>
+          <li><a href="over-mij.html">Over mij</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Bedrijfsgegevens</h3>
+        <div class="kv">
+          <span>Bedrijf</span><span>[Bedrijfsnaam]</span>
+          <span>Adres</span><span>[Straat + nr], [Postcode] [Plaats]</span>
+          <span>KvK</span><span>00000000</span>
+          <span>BTW</span><span>NL000000000B01</span>
+          <span>E-mail</span><span><a href="mailto:info@domein.nl">info@domein.nl</a></span>
+          <span>Telefoon</span><span><a href="tel:+31600000000">06 – 00 00 00 00</a></span>
+        </div>
+      </div>
+      <div>
+        <h3>Volg mij</h3>
+        <a class="li" href="https://www.linkedin.com/" target="_blank" rel="noopener">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.84-2.05 3.8-2.05C20.6 8.65 21 11.2 21 14.5V21h-4v-5.8c0-1.4-.03-3.2-1.95-3.2-1.95 0-2.25 1.5-2.25 3.1V21H9z"/></svg>
+          LinkedIn
+        </a>
+      </div>
+    </div>
+    <div class="legal">
+      <span>© <span id="yr">2026</span> [Bedrijfsnaam]</span>
+      <span>Privacyverklaring · Algemene voorwaarden</span>
+    </div>
+  </div>
+</footer>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
