@@ -162,6 +162,8 @@ section{padding-block:80px}
 .kv{display:grid;grid-template-columns:auto 1fr;gap:4px 14px}
 .kv span:nth-child(odd){opacity:.7}
 .legal{border-top:1px solid rgba(255,255,255,.14);margin-top:40px;padding-top:20px;font-size:14px;opacity:.8;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.legal .credit{text-decoration:underline;text-decoration-color:rgba(255,255,255,.35);text-underline-offset:3px}
+.legal .credit:hover{color:#fff;text-decoration-color:currentColor}
 .li{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(255,255,255,.25);border-radius:4px;padding:8px 14px}
 
 /* ==========================================================
